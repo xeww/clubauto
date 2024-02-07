@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
     --white: #FFFFFF;
     --gold: #FAB637;
     --red: #FF4848;
@@ -8,13 +8,58 @@
     --lesserWhite: #ECEFF3;
     --black: #232628;
     --blue: #6C98E1;
+    --gray: #2f3234;
 }
 
 /* Default title settings */
-h1, h2, h3, h4, h5, h6, .title{
-    font-family: "Montserrat", sans-serif
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: "Montserrat", sans-serif;
 }
 
-body{
-    font-family: "Open Sans", sans-serif
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#topHeader {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--black);
+}
+
+#mainTitle {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.topHeaderTitle {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.topHeaderContent {
+    color: var(--white);
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* stands for 'Top Header Content Reset'*/
+.THCR {
+    font-weight: 400;
+}
+
+#phoneNumber {
+    font-size: 20px;
+}
+
+#facebook {
+    display: none;
+}
+
+.topHeaderIcon {
+    background-color: var(--gray);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: white;
 }

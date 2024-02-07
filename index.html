@@ -14,20 +14,37 @@
         <!-- Top Header -->
         <div id="topHeader">
             <!-- Main Title-->
-            <a href="index.html">
-                <h1>Club Auto</h1>
-            </a>
+            <div>
+                <a href="index.html" id="mainTitle">
+                    <h1>Club Auto</h1>
+                </a>
+            </div>
 
             <!-- Address -->
-            <img src="./images/icone-adresse.png">
-            <p><span>Adresse :</span><br>Avenue Charles de Gaulle<br>75000 Paris</p>
+            <div>
+                <p>
+                    <span class="topHeaderTitle title">Adresse :</span>
+                    <span class="topHeaderContent THCR"><br>Avenue Charles de Gaulle<br>75000 Paris</span>
+                </p>
+            </div>
 
             <!-- Phone Number -->
-            <img src="./images/icon-telephone.png">
-            <p><span>Téléphone :</span><br><a href="tel:+330123456789">01 23 45 67 89</a></p>
+            <div>
+                <p>
+                    <span class="topHeaderTitle title">Téléphone :</span>
+                    <br><a href="tel:+330123456789" class="topHeaderContent" id="phoneNumber">01 23 45 67 89</a>
+                </p>
+            </div>
 
             <!-- Opened Days & Hours -->
-            <p><span>Ouverture :</span> Du Lundi au Samedi<br><span>Horaires :</span> De 9h à 17h</p>
+            <div>
+                <p>
+                    <span class="topHeaderTitle title">Ouverture :</span>
+                    <span class="topHeaderContent"> Du Lundi au Samedi</span>
+                    <br><span class="topHeaderTitle title">Horaires :</span>
+                    <span class="topHeaderContent"> De 9h à 17h</span>
+                </p>
+            </div>
 
             <!-- Facebook Icon -->
             <div id="facebook">
@@ -35,10 +52,13 @@
             </div>
             <!-- Twitter Icon -->
             <div id="twitter">
-                <img src="./images/twitter_icon.svg">
+                <ion-icon name="logo-twitter" class="topHeaderIcon"></ion-icon>
             </div>
         </div>
     </header>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
