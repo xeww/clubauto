@@ -52,6 +52,17 @@ body {
     text-decoration: none;
 }
 
+#addressSection {
+    display: flex;
+}
+
+#addressIcon {
+    margin-top: 20px;
+    margin-right: 5px;
+    height: 45px;
+    width: 45px;
+}
+
 #addressContent {
     text-transform: uppercase;
 }
@@ -61,11 +72,27 @@ body {
     font-weight: 400;
 }
 
+#phoneSection {
+    display: flex;
+}
+
+#phoneIcon {
+    margin-top: 20px;
+    height: 45px;
+    width: 45px;
+}
+
 #phoneNumber {
     font-size: 1.5rem;
 }
 
-.topHeaderIconBackground {
+#socialsBadges {
+    display: flex;
+    gap: 30px;
+
+}
+
+.topHeaderIcon {
     display: flex;
     justify-content: center;
     align-items: center;
