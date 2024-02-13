@@ -80,6 +80,7 @@ body {
     margin-top: 20px;
     height: 45px;
     width: 45px;
+    margin-right: 5px;
 }
 
 #phoneNumber {
@@ -106,4 +107,41 @@ body {
     width: 20px;
     height: 20px;
     color: white;
+}
+
+body nav {
+    position: absolute;
+    width: 100vw;
+    opacity: 0.85;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--white);
+    box-shadow: 0 3px 3px #d1d1d1;
+}
+
+body nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    margin-right: 200px;
+}
+
+body nav ul a {
+    text-decoration: none;
+}
+
+body nav ul li {
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 22px;
+}
+
+.currentButton {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#bottomHeaderBackground {
+    width: 100vw;
 }
