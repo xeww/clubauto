@@ -53,18 +53,18 @@ body {
     text-decoration: none;
 }
 
-#addressSection {
+.addressSection {
     display: flex;
 }
 
-#addressIcon {
+.addressIcon {
     margin-top: 20px;
     margin-right: 5px;
     height: 45px;
     width: 45px;
 }
 
-#addressContent {
+.addressContent {
     text-transform: uppercase;
 }
 
@@ -73,22 +73,22 @@ body {
     font-weight: 400;
 }
 
-#phoneSection {
+.phoneSection {
     display: flex;
 }
 
-#phoneIcon {
+.phoneIcon {
     margin-top: 20px;
     height: 45px;
     width: 45px;
     margin-right: 5px;
 }
 
-#phoneNumber {
+.phoneNumber {
     font-size: 1.5rem;
 }
 
-#socialsBadges {
+.socialsBadges {
     display: flex;
     gap: 30px;
 }
@@ -107,6 +107,10 @@ body {
     width: 20px;
     height: 20px;
     color: white;
+}
+
+.menu {
+    display: none;
 }
 
 body nav {
@@ -147,7 +151,7 @@ body nav ul li {
 }
 
 .slogan {
-    background-color: var(--gray);
+    background-color: var(--black);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -170,4 +174,54 @@ body nav ul li {
 /* temporary hack for the weird gap */
 .afterBottomHeader {
     max-height: 800px;
+}
+
+@media (max-width: 600px) {
+
+    .mainTitle {
+        display: none;
+    }
+
+    .addressSection {
+        display: none;
+    }
+
+    .phoneSection {
+        margin-right: auto;
+        margin-left: 10px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .times {
+        display: none;
+    }
+
+    .socialsBadges {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 15px;
+        width: 2.5em;
+    }
+
+    body nav {
+        display: none;
+    }
+
+    .bottomHeaderBackground {
+        display: none;
+    }
+
+    .slogan h1 {
+        padding: 10px;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
 }
