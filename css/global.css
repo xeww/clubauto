@@ -176,7 +176,7 @@ body nav ul li {
     max-height: 800px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .mainTitle {
         display: none;
@@ -223,5 +223,17 @@ body nav ul li {
         padding: 10px;
         padding-bottom: 20px;
         margin-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .times {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .socialsBadges {
+        display: none;
     }
 }
