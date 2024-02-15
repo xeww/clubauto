@@ -166,3 +166,8 @@ body nav ul li {
 .sloganSecond {
     color: var(--orange);
 }
+
+/* temporary hack for the weird gap */
+.afterBottomHeader {
+    max-height: 800px;
+}
