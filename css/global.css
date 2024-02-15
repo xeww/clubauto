@@ -171,9 +171,39 @@ body nav ul li {
     color: var(--orange);
 }
 
-/* temporary hack for the weird gap */
-.afterBottomHeader {
-    max-height: 800px;
+.intro {
+    margin: 40px 8% 40px 8%;
+}
+
+.introUpper {}
+
+.introUpperImg {
+    width: 35%;
+    float: left;
+}
+
+.introUpperFirstContent {
+    width: 35%;
+}
+
+.wel1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.wel1 span {
+    color: var(--orange);
+}
+
+.wel2 {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.wel3 {
+    color: var(--black);
 }
 
 @media (max-width: 700px) {
