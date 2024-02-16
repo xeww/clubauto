@@ -184,7 +184,7 @@ body nav ul li {
 }
 
 .introUpperImg {
-    width: 35%;
+    width: 36vw;
 }
 
 .introUpperFirstContent {
@@ -219,11 +219,15 @@ body nav ul li {
 }
 
 .introBottomImg {
-    width: 35%;
+    width: 36vw;
 }
 
 .introBottomFirstContent {
     width: 35%;
+}
+
+.introBottomFirstContent hr {
+    color: #fefefe;
 }
 
 .b-wel1 {
@@ -245,7 +249,7 @@ body nav ul li {
     width: 1em;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     .mainTitle {
         display: none;
@@ -296,13 +300,48 @@ body nav ul li {
 }
 
 @media (max-width: 1000px) {
+
     .times {
         display: none;
     }
+
 }
 
 @media (max-width: 1150px) {
+
     .socialsBadges {
         display: none;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .introUpper {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introUpperImg {
+        width: 70vw;
+    }
+
+    .introUpperFirstContent {
+        width: 70vw;
+    }
+
+    .introBottom {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introBottomFirstContent {
+        width: 70vw;
+    }
+
+    .introBottomImg {
+        width: 70vw;
     }
 }
