@@ -249,23 +249,14 @@ body nav ul li {
     width: 1em;
 }
 
-.questions {
-    position: relative;
-}
-
 .flex-questions {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     height: 40em;
-}
-
-.q-background {
-    position: absolute;
-    width: 100vw;
-    height: 40em;
-    z-index: -1;
+    background-image: url("../images/rent.jpg");
+    background-size: cover;
 }
 
 .rent {
@@ -274,6 +265,7 @@ body nav ul li {
     background-color: var(--gold);
     width: 30vw;
     padding: 42px;
+    opacity: 0.88;
 }
 
 .buy {
@@ -282,6 +274,7 @@ body nav ul li {
     background-color: var(--red);
     width: 30vw;
     padding: 42px;
+    opacity: 0.88;
 }
 
 .q-title {
@@ -294,6 +287,75 @@ body nav ul li {
 
 .q-content {
     color: var(--white);
+}
+
+.recent-vehicles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.recent-vehicles h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.recent-vehicles hr {
+    color: var(--orange);
+}
+
+.all-vehicles {
+    display: flex;
+    gap: 30px;
+    margin: 1.5em auto 1.5em;
+}
+
+.single-vehicle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30em;
+}
+
+.vehicle-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    padding: 1.5em;
+}
+
+.in-vehicle-info {
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #4e5254;
+}
+
+.price-normal,
+.vehicle-name {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.price-normal,
+.price-discount {
+    padding-left: 7px;
+}
+
+.price-discount {
+    color: var(--black);
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.vehicle-price {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    width: 25%;
 }
 
 @media (max-width: 750px) {
@@ -343,6 +405,32 @@ body nav ul li {
         padding: 10px;
         padding-bottom: 20px;
         margin-left: 0;
+    }
+
+    .flex-questions {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+
+    .rent {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 42px;
+    }
+
+    .buy {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 42px;
+    }
+
+    .q-title,
+    .q-content {
+        padding-right: 100px;
+        padding-left: 100px;
     }
 }
 
