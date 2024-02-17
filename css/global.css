@@ -184,7 +184,7 @@ body nav ul li {
 }
 
 .introUpperImg {
-    width: 36vw;
+    width: 33vw;
 }
 
 .introUpperFirstContent {
@@ -219,7 +219,7 @@ body nav ul li {
 }
 
 .introBottomImg {
-    width: 36vw;
+    width: 33vw;
 }
 
 .introBottomFirstContent {
@@ -247,6 +247,53 @@ body nav ul li {
 
 .b-wel3 span img {
     width: 1em;
+}
+
+.questions {
+    position: relative;
+}
+
+.flex-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 40em;
+}
+
+.q-background {
+    position: absolute;
+    width: 100vw;
+    height: 40em;
+    z-index: -1;
+}
+
+.rent {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gold);
+    width: 30vw;
+    padding: 42px;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red);
+    width: 30vw;
+    padding: 42px;
+}
+
+.q-title {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.q-content {
+    color: var(--white);
 }
 
 @media (max-width: 750px) {
