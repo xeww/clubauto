@@ -68,8 +68,7 @@ body {
     text-transform: uppercase;
 }
 
-/* stands for 'Top Header Content Reset'*/
-.THCR {
+.top-header-content-reset {
     font-weight: 400;
 }
 
@@ -289,6 +288,11 @@ body nav ul li {
     color: var(--white);
 }
 
+.m-line {
+    width: 70%;
+    color: var(--orange);
+}
+
 .recent-vehicles {
     display: flex;
     flex-direction: column;
@@ -301,10 +305,6 @@ body nav ul li {
     color: var(--white);
     text-transform: uppercase;
     font-size: 1.8rem;
-}
-
-.recent-vehicles hr {
-    color: var(--orange);
 }
 
 .all-vehicles {
@@ -321,15 +321,25 @@ body nav ul li {
 }
 
 .vehicle-info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+        "v-name v-name v-price"
+        "line line line";
     background-color: var(--gray);
-    padding: 1.5em;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
 }
 
-.in-vehicle-info {
-    padding-bottom: 1.5em;
-    border-bottom: 2px solid #4e5254;
+.v-line {
+    grid-area: line;
+    width: 100%;
+    color: #4e5254;
+}
+
+.vehicle-name {
+    grid-area: v-name;
 }
 
 .price-normal,
@@ -352,10 +362,12 @@ body nav ul li {
 }
 
 .vehicle-price {
+    grid-area: v-price;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--blue);
-    width: 25%;
+    max-height: 3.5em;
 }
 
 @media (max-width: 750px) {
