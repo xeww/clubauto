@@ -317,7 +317,7 @@ body nav ul li {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 30em;
+    width: 25vw;
 }
 
 .vehicle-info {
@@ -367,7 +367,7 @@ body nav ul li {
     flex-direction: column;
     justify-content: center;
     background-color: var(--blue);
-    max-height: 3.5em;
+    height: 80%;
 }
 
 @media (max-width: 750px) {
@@ -444,6 +444,14 @@ body nav ul li {
         padding-right: 100px;
         padding-left: 100px;
     }
+
+    .all-vehicles .single-vehicle:nth-child(2) {
+        display: none;
+    }
+
+    .all-vehicles .single-vehicle:nth-child(1) {
+        width: 80vw;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -490,5 +498,13 @@ body nav ul li {
 
     .introBottomImg {
         width: 70vw;
+    }
+
+    .all-vehicles .single-vehicle:nth-child(3) {
+        display: none;
+    }
+
+    .single-vehicle {
+        width: 40vw;
     }
 }
