@@ -463,6 +463,44 @@ body nav ul li:hover {
     font-size: 1.1rem;
 }
 
+.rental {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/vehicule3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 40em;
+}
+
+.rental-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gold);
+    opacity: 0.85;
+    width: 25%;
+    padding: 4em;
+    margin-left: 15vw;
+}
+
+.rental-info-title {
+    font-weight: bold;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+.rental-info-title span:nth-of-type(1) {
+    color: var(--black);
+}
+
+.rental-info-title span:nth-of-type(2) {
+    color: var(--white);
+}
+
+.rental-info p:nth-child(2) {
+    color: var(--black);
+}
+
 @media (max-width: 1150px) {
 
     .socialsBadges {
@@ -519,6 +557,15 @@ body nav ul li:hover {
 
     .reason {
         width: 50vw;
+    }
+
+    .rental {
+        justify-content: center;
+    }
+
+    .rental-info {
+        margin-left: 0;
+        width: 60vw;
     }
 }
 
@@ -618,5 +665,10 @@ body nav ul li:hover {
 
     .about-us h2 {
         font-size: 2rem;
+    }
+
+    .rental-info {
+        margin-left: 0;
+        width: 100vw;
     }
 }
