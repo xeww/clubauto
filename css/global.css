@@ -38,6 +38,11 @@ body {
     text-decoration: none;
     color: var(--white);
     font-size: 1.1rem;
+    transition: all 0.1s ease;
+}
+
+.mainTitle:hover {
+    color: #cccccc;
 }
 
 .topHeaderTitle {
@@ -100,6 +105,11 @@ body {
     border-radius: 50%;
     width: 38px;
     height: 38px;
+    transition: all 0.3s ease;
+}
+
+.topHeaderIcon:hover {
+    background-color: #51565a;
 }
 
 .topHeaderIconImage {
@@ -138,6 +148,12 @@ body nav ul li {
     text-transform: uppercase;
     font-weight: bold;
     padding: 22px;
+    transition: all 0.2s ease;
+}
+
+body nav ul li:hover {
+    color: var(--white);
+    background-color: var(--orange);
 }
 
 .currentButton {
@@ -320,6 +336,10 @@ body nav ul li {
     width: 25vw;
 }
 
+.single-vehicle-img {
+    width: 25vw;
+}
+
 .vehicle-info {
     display: grid;
     grid-template-areas:
@@ -342,6 +362,21 @@ body nav ul li {
     grid-area: v-name;
 }
 
+.vehicle-price {
+    grid-area: v-price;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blue);
+    height: 80%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.vehicle-price:hover {
+    background-color: #8aade7;
+}
+
 .price-normal,
 .vehicle-name {
     color: var(--white);
@@ -359,15 +394,6 @@ body nav ul li {
     text-decoration: line-through;
     font-weight: normal;
     font-size: 1rem;
-}
-
-.vehicle-price {
-    grid-area: v-price;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--blue);
-    height: 80%;
 }
 
 .about-us {
@@ -420,6 +446,7 @@ body nav ul li {
     text-decoration: none;
     border-bottom: outset 3px #8aade7;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .contact-us-btn:hover {
@@ -434,6 +461,72 @@ body nav ul li {
     margin-block-start: 0;
     padding: 1em;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1150px) {
+
+    .socialsBadges {
+        display: none;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .introUpper {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introUpperImg {
+        width: 70vw;
+    }
+
+    .introUpperFirstContent {
+        width: 70vw;
+    }
+
+    .introBottom {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introBottomFirstContent {
+        width: 70vw;
+    }
+
+    .introBottomImg {
+        width: 70vw;
+    }
+
+    .all-vehicles .single-vehicle:nth-child(3) {
+        display: none;
+    }
+
+    .single-vehicle {
+        width: 40vw;
+    }
+
+    .single-vehicle-img {
+        width: 40vw;
+    }
+
+    .about-us-reasons {
+        flex-direction: column;
+    }
+
+    .reason {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .times {
+        display: none;
+    }
 }
 
 @media (max-width: 750px) {
@@ -519,69 +612,11 @@ body nav ul li {
         width: 80vw;
     }
 
+    .single-vehicle-img {
+        width: 80vw;
+    }
+
     .about-us h2 {
         font-size: 2rem;
-    }
-}
-
-@media (max-width: 1000px) {
-
-    .times {
-        display: none;
-    }
-}
-
-@media (max-width: 1150px) {
-
-    .socialsBadges {
-        display: none;
-    }
-
-    .intro {
-        flex-direction: column;
-    }
-
-    .introUpper {
-        gap: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .introUpperImg {
-        width: 70vw;
-    }
-
-    .introUpperFirstContent {
-        width: 70vw;
-    }
-
-    .introBottom {
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .introBottomFirstContent {
-        width: 70vw;
-    }
-
-    .introBottomImg {
-        width: 70vw;
-    }
-
-    .all-vehicles .single-vehicle:nth-child(3) {
-        display: none;
-    }
-
-    .single-vehicle {
-        width: 40vw;
-    }
-
-    .about-us-reasons {
-        flex-direction: column;
-    }
-
-    .reason {
-        width: 50vw;
     }
 }
