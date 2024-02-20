@@ -207,7 +207,7 @@ body nav ul li {
 }
 
 .u-wel3 {
-    color: var(--black);
+    color: #969696;
 }
 
 .introBottom {
@@ -237,7 +237,7 @@ body nav ul li {
 }
 
 .b-wel2 {
-    color: var(--gray);
+    color: #969696;
 }
 
 .b-wel3 {
@@ -370,6 +370,72 @@ body nav ul li {
     height: 80%;
 }
 
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5em;
+    margin-bottom: 3em;
+}
+
+.about-us h2 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.about-us-reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.reason {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 20vw;
+}
+
+.reason img {
+    margin-bottom: 2em;
+    width: 4.5em;
+}
+
+.reason-p1 {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.reason-p2 {
+    color: #969696;
+}
+
+.contact-us-btn {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    text-decoration: none;
+    border-bottom: outset 3px #8aade7;
+    border-radius: 4px;
+}
+
+.contact-us-btn:hover {
+    background-color: #8aade7;
+}
+
+.contact-us-btn p {
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding: 1em;
+    font-size: 1.1rem;
+}
+
 @media (max-width: 750px) {
 
     .mainTitle {
@@ -452,6 +518,10 @@ body nav ul li {
     .all-vehicles .single-vehicle:nth-child(1) {
         width: 80vw;
     }
+
+    .about-us h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -459,7 +529,6 @@ body nav ul li {
     .times {
         display: none;
     }
-
 }
 
 @media (max-width: 1150px) {
@@ -506,5 +575,13 @@ body nav ul li {
 
     .single-vehicle {
         width: 40vw;
+    }
+
+    .about-us-reasons {
+        flex-direction: column;
+    }
+
+    .reason {
+        width: 50vw;
     }
 }
