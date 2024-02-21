@@ -744,14 +744,14 @@ footer hr {
     .rent {
         flex-direction: column;
         align-items: center;
-        width: 100vw;
-        padding: 42px;
+        width: 80vw;
+        padding: 40px;
     }
 
     .buy {
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 80vw;
         padding: 42px;
     }
 
