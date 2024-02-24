@@ -934,15 +934,14 @@ footer hr {
         flex-direction: column;
     }
 
+    .contact-form {
+        padding: 2em;
+    }
+
     .contact-form-input-wrapper {
         display: grid;
         grid-template-areas: "f-name" "l-name" "email" "phone" "no" "msg" "submit";
-        gap: 2.5em;
-    }
-
-    .contact-form {
-        /* height: 70%; */
-        padding: 2.5em;
+        gap: 1em;
     }
 }
 
