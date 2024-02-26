@@ -26,6 +26,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+/* Top header */
 .topHeader {
     display: flex;
     justify-content: space-evenly;
@@ -122,6 +123,7 @@ body {
     display: none;
 }
 
+/* Nav bar */
 body nav {
     position: absolute;
     width: 100%;
@@ -166,10 +168,12 @@ body nav ul li:hover {
     color: var(--white);
 }
 
+/* btm header background */
 .bottomHeaderBackground {
     width: 100%;
 }
 
+/* slogan */
 .slogan {
     background-color: var(--black);
     text-transform: uppercase;
@@ -191,6 +195,7 @@ body nav ul li:hover {
     color: var(--orange);
 }
 
+/* intro section */
 .intro {
     display: flex;
     flex-direction: column;
@@ -269,6 +274,7 @@ body nav ul li:hover {
     width: 1em;
 }
 
+/* questions section */
 .flex-questions {
     display: flex;
     justify-content: center;
@@ -316,6 +322,7 @@ body nav ul li:hover {
     border-top: 1px solid var(--orange);
 }
 
+/* recent vehicles section */
 .recent-vehicles {
     display: flex;
     flex-direction: column;
@@ -405,6 +412,7 @@ body nav ul li:hover {
     font-size: 1rem;
 }
 
+/* about us section */
 .about-us {
     display: flex;
     flex-direction: column;
@@ -473,6 +481,7 @@ body nav ul li:hover {
     font-size: 1.1rem;
 }
 
+/* rental info section */
 .rental {
     display: flex;
     justify-content: flex-start;
@@ -511,6 +520,7 @@ body nav ul li:hover {
     color: var(--black);
 }
 
+/* footer section */
 footer {
     background-color: var(--black);
 }
@@ -621,6 +631,7 @@ footer hr {
     color: #888888;
 }
 
+/* vehicle details page */
 .vehicle-details-main {
     margin: auto 10% auto 10%;
 }
@@ -730,6 +741,7 @@ footer hr {
     padding-top: 0.5em;
 }
 
+/* contact form page */
 .contact-main-wrapper {
     position: relative;
 }
@@ -839,6 +851,8 @@ footer hr {
         background-color: #8aade7;
     }
 }
+
+/* media queries */
 
 @media (max-width: 1300px) {
 
